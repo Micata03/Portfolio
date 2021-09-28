@@ -328,6 +328,24 @@ progress::-moz-progress-bar{
 .about > article{
     margin-bottom: 2rem;
 }
+.contact-card{
+    margin:1rem auto;
+    padding: 1rem;
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-card > svg{
+    width: 2rem;
+    height: 2rem;
+    fill: var(--first-color);
+}
+.contact-card > small{
+    margin-top: -1rem;
+}
 
 .header{
     position: fixed;
@@ -411,6 +429,7 @@ progress::-moz-progress-bar{
 .portfolio-details b{
     color: var(--first-color);
 }
+
 .service-card{
     margin: 1rem auto;
     padding: 1rem;
@@ -425,10 +444,31 @@ progress::-moz-progress-bar{
 .service-card h3{
     color: var(--title-color);
 }
+.social-media a{
+    padding: 0 0.4rem;
+    text-decoration: none;
+}
+.social-media svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
 @media screen and (min-width: 768px){
+    .contact-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 48% );
+        justify-content: space-between;
+    }
     .portfolio > .container{
         display: grid;
         grid-template-columns: repeat(2, 50%);
+    }
+    .portfolio-modal{
+        max-width: 800px;
+        flex-direction: row;
+    }
+    .portfolio-info{
+        margin-left: 1rem;
+        align-self: center;
     }
     .service >.container{
         display: grid;
@@ -448,6 +488,9 @@ progress::-moz-progress-bar{
         justify-content: space-between;
         align-content: center;
 
+    }
+    .contact-cards{
+        grid-template-columns: repeat(4, 24% );
     }
     .header{
         position: sticky;
