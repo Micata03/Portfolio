@@ -2,18 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 :root{
-    --first-color: #d90062;
-    --first-alpha-color: rgba(217,0,98,0.75);
+    --first-color: #ff7271;
+    --first-alpha-color: rgba(143, 73, 79, 0.75);
     --second-color: #14192d;
     --second-alpha-color: rgba(20,25,45,0.75);
-    --third-color: #501464;
+    --third-color: #855aff;
     --third-alpha-color: rgba(80,20,100,0.75);
     --white-color: #fff;
     --gray-light-color: #f3f3f3;
     --gray-color: #ccc;
     --gray-dark-color: #666;
+    --cyan-color: #04ADBF;
     --black-color: #000;
-    --link-color: #509ee3;
+    --link-color: #5acfe;
     --title-color: #333;
     --text-color: #222;
     --white-alpha-color: rgba(255,255,255,0.5);
@@ -179,7 +180,7 @@ p{
 
 /*----HERO IMAGE----*/
 .hero-image{
-    background-image: url('../images/hero-image-home.jpg');
+    background-image: url('../images/hero-image.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -320,10 +321,10 @@ progress::-webkit-progress-bar{
     background-color: var(--gray-color);
 }
 progress::-webkit-progress-value{
-    background-color: var(--gray-dark-color);
+    background-color: var(--cyan-color);
 }
 progress::-moz-progress-bar{
-    background-color: var(--gray-dark-color);
+    background-color: var(--cyan-color);
 }
 .progress{
     margin: 1rem auto;
